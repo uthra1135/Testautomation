@@ -4,7 +4,7 @@
   "description": "Hacker Rank QA front-end test template (NodeJS)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "wdio wdio.conf.js",
     "pretest": "npm install",
     "lint": "eslint --ignore-path .gitignore ./src",
     "prettier:check": "prettier --check 'src/**/*.{ts,json,js,tsx,graphql,md,yml,yaml,json}'",
@@ -21,7 +21,15 @@
   },
   "homepage": "https://github.com/zipMoney/hrank-qa-frontend#readme",
   "devDependencies": {
+    "@wdio/local-runner": "^7.7.3",
+    "@wdio/mocha-framework": "^7.7.3",
+    "@wdio/spec-reporter": "^7.7.3",
+    "chromedriver": "^91.0.0",
     "eslint": "^7.13.0",
-    "prettier": "^2.1.2"
+    "prettier": "^2.1.2",
+    "wdio-chromedriver-service": "^7.1.0"
+  },
+  "dependencies": {
+    "@wdio/cli": "^7.7.3"
   }
 }
