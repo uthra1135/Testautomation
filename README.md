@@ -23,14 +23,13 @@ npm run test-spec ./Purchaseorder.e2e.js
 ```
 
 
-####Scenario
+#### Scenario
 
 ```
 Load the http://automationpractice.com/index.php
  Navigate from homepage PLP category to subcategory
  click first element and  add the item to cart 
  Complete the checkout process and complete the order
- 
 
 ```
 
